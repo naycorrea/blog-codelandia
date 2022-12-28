@@ -1,0 +1,138 @@
+:root {
+  --background: #f3f5f7;
+  --title: #1a202c;
+  --text: #717171;
+  --white: #ffffff;
+  --white-20: #ffffff33;
+  --purple: #574ae8;
+  --gradient: linear-gradient(270deg, #3ea1db 0%, #574ae8 100%);
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+
+  --font-size-xs: 1rem;
+  --font-size-sm: 1.125rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 1.625rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  background: var(--background);
+
+  font-family: "Lexend Deca", sans-serif;
+
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100vw;
+
+  background: var(--gradient);
+}
+
+.header-menu {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 41px 510px 73px 510px;
+}
+
+.header span {
+  color: var(--white);
+  font-size: var(--font-size-md);
+}
+
+.header-search {
+  display: flex;
+
+  padding: 0 510px 41px 510px;
+}
+
+.input-root {
+  width: 100%;
+
+  padding: 21px 20.28px;
+
+  display: flex;
+
+  background: var(--white-20);
+
+  border-radius: 5px;
+}
+
+.ph-magnifying-glass {
+  font-size: 24px;
+  padding-right: 20.28px;
+
+  color: var(--white);
+}
+
+.input-root input {
+  width: 100%;
+  border: none;
+  outline: none;
+
+  color: var(--white);
+  font-size: var(--font-size-xs);
+
+  background: transparent;
+}
+
+.input-root input::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.body {
+  width: 100vw;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 510px 100px 510px;
+  gap: 50px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+
+  padding: 29px 25px;
+  border-radius: 5px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  padding-bottom: 20px;
+
+  color: var(--text);
+  font-size: var(--font-size-sm);
+}
+
+.ph-heart-straight {
+  font-size: 22px;
+  color: var(--purple);
+}
+
+.title {
+  padding-bottom: 8px;
+
+  color: var(--title);
+  font-size: var(--font-size-lg);
+}
+
+.paragraph {
+  color: var(--text);
+  font-size: var(--font-size-sm);
+}
